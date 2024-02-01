@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Shopping List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--creating a dynamic list-->
+  <!--header of the list-->
+    <div class="head-container">
+      <h1 id="main-heading"></h1>
+    </div>
+  <!--taking input from user and add this item-->
+   
+      <form class="form-input">
+      <label for="name">enter your name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="mail">enter your mail</label>
+      <input type="email" id="mail" name="mail" required>
+      <label for="dob">date of birth</label>
+      <input type="date" id="dob" name="dob" required>
+      <button type="submit" id="add-item-btn">add items</button>
+      </form>
+
+    
+  <!--adding this item into an unordered list-->
+    <div class="item-list"> </div>
+
+    <!--saving response from server-->
+    <div class="ser-res"></div>
+
+    
+   
+    
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
